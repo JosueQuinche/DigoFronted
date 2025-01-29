@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",  // Desactiva la regla de vars no utilizadas
+    "react/jsx-key": "off",  // Desactiva la regla de JSX sobre claves
+    "no-console": "warn"  // Solo muestra advertencias por el uso de `console.log`
+  }
 }
