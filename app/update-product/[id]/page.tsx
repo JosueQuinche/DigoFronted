@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "../../styles/BlankPage.module.css";
+import styles from "../../../styles/BlankPage.module.css"; // Ruta corregida
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Heart } from "lucide-react";
