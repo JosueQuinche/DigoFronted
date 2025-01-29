@@ -8,7 +8,7 @@ import styles from "../../styles/ISesion.module.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState<string>(""); // Asegúrate de que el tipo sea correcto
   const router = useRouter();
 
   const handleLogin = async (e: React.FormEvent) => {
