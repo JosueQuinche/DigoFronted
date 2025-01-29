@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151515;
+  padding: 16px;
+}
+
+.card {
+  background: #000000;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  font-weight: bold;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000048;
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 72, 0.7); /* Opcional: agrega un efecto de sombra */
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.showPassword {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.forgotPassword {
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.loginButton {
+  background-color: #454545;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.orText {
+  margin: 16px 0;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.socialButton {
+  flex: 1;
+  background-color: #FFFFFF;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.registerLink {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 16px;
+  display: block;
+}
+
+/* Nueva clase para la flecha */
+.arrowBack {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}

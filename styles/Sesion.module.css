@@ -1,0 +1,49 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151515;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 25%;
+}
+
+.buttonContainer .button{
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.start {
+    background-color: #FFFFFF;
+    color: #000048;
+    width: 100%;
+}
+
+.register {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    border: 2px solid #FFFFFF; /* Borde blanco fino */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra flotante */
+}

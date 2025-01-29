@@ -1,0 +1,84 @@
+    /* Contenedor principal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Encabezado */
+    .header {
+        width: 100%;
+        border-bottom: 2px solid #000000; /* Cambio a negro */
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    /* Título centrado */
+    .header h1 {
+        margin: 0;
+        color: #000000; /* Cambio a negro */
+        font-size: 1.8rem;
+    }
+
+    /* Estilo para el botón de la flecha de retroceso */
+    .backButton {
+        position: absolute;
+        left: 20px;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: #000000; /* Cambio a negro */
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    /* Efecto al pasar el cursor */
+    .backButton:hover {
+        transform: scale(1.1);
+    }
+
+    /* Contenido principal */
+    .main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        background-color: #f9f9f9; /* Mantengo un fondo gris claro */
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Sección de datos */
+    .dataSection p {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color: #333333; /* Texto oscuro para mejor legibilidad */
+    }
+
+    .dataSection strong {
+        color: #000000; /* Texto en negrita en negro */
+    }
+
+    /* Ajuste para hacerlo más amigable */
+    .dataSection {
+        background-color: #ffffff; /* Fondo blanco para la sección de datos */
+        padding: 20px;
+        border-radius: 8px;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+    }

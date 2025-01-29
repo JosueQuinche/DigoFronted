@@ -1,0 +1,48 @@
+/* exito.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;  /* Fondo oscuro */
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    color: #ffffff; /* Letras blancas para el título */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1.25rem;
+    color: #cccccc; /* Gris claro para el párrafo */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.button {
+    background-color: #ffffff; /* Botón blanco */
+    color: #121212; /* Texto negro para el botón */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.button:hover {
+    background-color: #f1f1f1; /* Gris claro al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de "flotación" al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte al hacer hover */
+}
+
+.button:active {
+    background-color: #dddddd; /* Gris más oscuro cuando se hace clic */
+    transform: translateY(1px); /* Efecto de presión */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave cuando se hace clic */
+}

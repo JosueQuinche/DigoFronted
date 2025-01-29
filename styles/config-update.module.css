@@ -1,0 +1,135 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212; /* Fondo negro */
+  padding: 20px;
+  position: relative;
+}
+
+/* Título principal */
+.title {
+  font-size: 1.5rem; /* Tamaño reducido */
+  color: #ffffff; /* Texto blanco */
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Estilo del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e; /* Fondo gris oscuro */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilo de las etiquetas */
+.label {
+  font-size: 1rem;
+  color: #bbbbbb; /* Gris claro */
+  margin-bottom: 12px;
+}
+
+/* Estilo de los inputs */
+.input, .priceInput {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444444; /* Gris oscuro */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  color: #ffffff; /* Texto blanco */
+  background-color: #333333; /* Fondo gris oscuro */
+}
+
+/* Efecto al enfocar los inputs */
+.input:focus, .priceInput:focus {
+  border-color: #ffffff; /* Blanco */
+  outline: none;
+}
+
+/* Estilo del botón principal */
+.button {
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  color: #000000; /* Texto negro */
+  background-color: #ffffff; /* Fondo blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* Gris claro */
+  color: #333333; /* Gris oscuro */
+}
+
+/* Estilo del botón de eliminación */
+.deleteButton {
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #e74c3c; /* Rojo */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
+}
+
+/* Botón de retroceso */
+.backButton {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff; /* Blanco */
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.backButton:hover {
+  color: #00aaff; /* Azul claro */
+}
+
+/* Contenedor de precio */
+.priceContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Signo de dólar */
+.dollarSign {
+  top: 9px;
+  position: absolute;
+  left: 10px;
+  font-size: 1.2rem;
+  color: #ffffff; /* Blanco */
+}
+
+/* Mensaje de error */
+.errorMessage {
+  color: #e74c3c; /* Rojo */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}

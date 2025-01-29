@@ -1,0 +1,147 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
+
+/* Estilo para el botón de la flecha de retroceso */
+.backArrow {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.backArrow:hover {
+  transform: scale(1.1);
+}
+
+/* Contenedor del logo centrado */
+.logoContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Contenido principal */
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Lista de clientes */
+.clientList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Elemento individual de cliente */
+.clientItem {
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #000000;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones en columna */
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Botón Actualizar */
+.updateButton {
+  padding: 8px 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Botón Eliminar */
+.deleteButton {
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Hover en los botones */
+.updateButton:hover, .deleteButton:hover {
+  opacity: 0.8;
+}
+
+/* Botón de favoritos */
+.favoriteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.2);
+}
+
+/* Mensaje vacío */
+.emptyMessage {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}

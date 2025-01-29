@@ -1,0 +1,218 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #000000;
+  margin-top: 5px;
+}
+
+.logoContainer {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #1A1A1A;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.configIcon {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Título de sección */
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000000; /* O el color que prefieras */
+}
+
+/* Contenedor de favoritos (Clientes) */
+.favoritesBoxClients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 150px;
+  height: 176px;
+  justify-content: center;
+  margin-bottom: -179px;
+  margin-top: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 189px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  scrollbar-width: none
+}
+
+/* Contenedor de favoritos (Productos) */
+.favoritesBoxProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 320px;
+  max-width: 150px;
+  height: 180px;
+  justify-content: center;
+  margin-bottom: -180px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 189px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  scrollbar-width: none;
+}
+
+/* Estilos para las burbujas de favoritos */
+.favoriteBubbleClient,
+.favoriteBubbleProduct {
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Texto en caso de que no haya favoritos */
+.noFavorites {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Sección principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Tarjeta */
+.card {
+  background-color: #F5F5F5;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 165px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+/* Título de la tarjeta */
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+/* Contenido de la tarjeta */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botón "+" */
+.addButton {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Botón de flecha */
+.viewMoreButton {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 3px solid #000000;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footerLink img {
+  width: 35px;
+  height: 35px;
+  filter: grayscale(100%);
+}
+
+.footerLink img:hover {
+  filter: grayscale(0%);
+}

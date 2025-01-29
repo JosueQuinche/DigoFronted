@@ -1,0 +1,138 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+/* Encabezado */
+.header {
+  width: 100%;
+  border-bottom: 2px solid #FFFFFF;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Título centrado */
+.header h1,
+.logoContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilo para el botón de retroceso */
+.backArrow {
+  position: absolute;
+  left: 20px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Efecto al pasar el cursor */
+.backArrow:hover {
+  transform: scale(1.1);
+}
+
+/* Contenido principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25px;
+  width: 100%;
+  max-width: 700px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+/* Sección de datos */
+.dataSection {
+  width: 100%;
+  background-color: #000000;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+  margin-bottom: 30px;
+}
+
+.dataSection h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.dataSection p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  line-height: 1.4;
+}
+
+.dataSection strong {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Contenedor de los botones de compartir */
+.shareContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilo común para los botones de compartir */
+.shareButton {
+  background-color: #ffffff;
+  border: 2px solid #000000;  /* Borde negro */
+  color: #000000;  /* Texto negro */
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;  /* Transición suave para todos los efectos */
+}
+
+/* Efecto de hover para los botones */
+.shareButton:hover {
+  background-color: #000000;  /* Fondo negro */
+  color: #ffffff;  /* Texto blanco */
+  border-color: #ffffff;  /* Borde blanco */
+}
+
+/* Botón de "Descargar" */
+.shareButton.downloadButton {
+  padding: 10px;
+}
+
+/* Botón de "WhatsApp" */
+.shareButton.whatsappButton {
+  padding: 10px;
+}

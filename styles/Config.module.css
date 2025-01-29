@@ -1,0 +1,143 @@
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  border-bottom: 2px solid #000000; /* Línea negra debajo */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  box-sizing: border-box; /* Asegura que el borde no agregue espacio extra */
+  position: relative; /* Asegura que los elementos hijos con position absolute se alineen en relación con este contenedor */
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #000000; /* Título negro */
+  font-weight: 600;
+  margin: 20px;
+  width: 100%; /* Hace que el título ocupe todo el ancho disponible */
+}
+
+/* Botón de cerrar sesión */
+.logoutButton {
+  position: absolute; /* Permite posicionarlo respecto al contenedor .header */
+  top: 20px;  /* Mueve el botón un poco hacia abajo */
+  right: 10px;  /* Mueve el botón un poco hacia la izquierda */
+  color: #ffffff;
+  background-color: #e74c3c; /* Rojo */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Botón de regreso */
+.backButton {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 12px;
+  margin-bottom: 5px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* Sección principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownButton {
+  padding: 12px;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdownButton:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dropdownContent {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-top: 2px solid #000000;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.saveButton {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.saveButton:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}

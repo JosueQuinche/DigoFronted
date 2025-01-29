@@ -1,0 +1,163 @@
+/* Productos.module.css */
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Asegura que los elementos no estén centrados verticalmente */
+    min-height: 100vh;
+    background-color: #ffffff; /* Fondo blanco */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Encabezado */
+  .header {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .logoContainer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000; /* Título en color negro */
+    flex: 1;
+    text-align: center; /* Centrado del título */
+  }
+  
+  /* Estilo para la flecha (alineada a la izquierda) */
+  .backArrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000000; /* Color verde para la flecha */
+    cursor: pointer;
+    position: absolute;
+    left: 30px; /* Alineada a la izquierda */
+    top: 15px;
+  }
+  
+  /* Lista de productos */
+  .productList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .productItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Información de productos */
+  .productInfo {
+    flex: 1;
+  }
+  
+  .productInfo span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000; /* Letras en negro para el nombre del producto */
+  }
+  
+  .productInfo p {
+    color: #000000; /* Letras en negro para la descripción */
+    font-size: 14px;
+  }
+  
+  /* Contenedor de botones */
+  .buttonsContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Estilo para el botón de actualizar con ícono blanco */
+  .updateButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .updateButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .updateButton svg {
+    fill: white; /* Ícono blanco */
+  }
+  
+  /* Estilo para el botón de eliminar */
+  .deleteButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .deleteButton svg {
+    fill: black;
+  }
+  
+  /* Estilo para el botón de pagar (fondo blanco, texto negro) */
+  .paymentButton {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #000; /* Borde negro */
+    color: black; /* Texto negro */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .paymentButton:hover {
+    background-color: #f0f0f0; /* Cambio de color al pasar el mouse */
+  }
+  
+  .paymentButton svg {
+    fill: black; /* Ícono negro */
+  }
+  
+/* Botón de favoritos */
+.favoriteButton {
+    background: none; /* Se mantiene el fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Hace el cursor un puntero */
+    padding: 5px; /* Ajuste el padding a 5px */
+    transition: transform 0.3s ease; /* Animación para el efecto de escala */
+  }
+  
+  .favoriteButton:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+  }
+  
+  
+  /* Mensaje cuando no hay productos disponibles */
+  .emptyMessage {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+  }
+  

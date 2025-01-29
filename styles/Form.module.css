@@ -1,0 +1,155 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212; /* Fondo oscuro */
+    padding: 20px;
+    position: relative;
+}
+
+/* Título principal */
+.title {
+    font-size: 1.5rem;
+    color: #fff; /* Texto blanco */
+    margin-bottom: 20px;
+    font-weight: 600; /* Peso de fuente para un look más profesional */
+    text-align: center;
+    text-transform: uppercase; /* Para un toque más moderno */
+}
+
+/* Estilo del formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e; /* Fondo gris oscuro para el formulario */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo de las etiquetas de los inputs */
+.label {
+    font-size: 1rem;
+    color: #bbb; /* Gris claro para las etiquetas */
+    margin-bottom: 12px;
+}
+
+/* Estilo de los inputs */
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #444; /* Gris más oscuro para los bordes */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: #fff; /* Texto blanco */
+    background-color: #333; /* Fondo oscuro para los inputs */
+}
+
+/* Efecto al enfocarse en el input */
+.input:focus {
+    border-color: #fff; /* Blanco al enfocarse */
+    outline: none;
+}
+
+/* Estilo del botón principal */
+.button {
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: #fff; /* Fondo blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e0e0e0; /* Gris claro al pasar el ratón */
+    color: #333; /* Gris oscuro para el texto al hacer hover */
+}
+
+/* Estilo del botón de eliminación (opcional) */
+.deleteButton {
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #e74c3c; /* Rojo para eliminar */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+}
+
+/* Estilos para el botón de retroceso */
+.backButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff; /* Blanco para el icono de retroceso */
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.backButton:hover {
+    color: #00aaff; /* Azul al pasar el mouse */
+}
+
+/* Estilos para el contenedor del campo de precio */
+.priceContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para el signo de dólar */
+.dollarSign {
+    top: 9px;
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #fff; /* Blanco para el signo de dólar */
+}
+
+/* Estilo para el campo de entrada de precio */
+.priceInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 30px; /* Espacio adicional para el signo de dólar */
+    box-sizing: border-box;
+    color: #fff; /* Texto blanco */
+    background-color: #333; /* Fondo oscuro para el input */
+}
+
+/* Efecto al enfocarse en el campo de precio */
+.priceInput:focus {
+    border-color: #fff; /* Blanco al enfocarse */
+    outline: none;
+}
+
+/* Mensaje de error */
+.errorMessage { 
+    color: #e74c3c; /* Rojo para el mensaje de error */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
