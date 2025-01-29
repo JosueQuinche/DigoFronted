@@ -3,6 +3,7 @@ import styles from "../../styles/Grid.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image"; // Importa el componente Image
 
 // Definición de las interfaces
 interface Client {
@@ -79,10 +80,12 @@ export default function Dashboard() {
           <span className={styles.logo}>Facturador</span>
         </div>
         <a href="/config">
-          <img
+          <Image
             src="/icons/setting.png"
             alt="Configuración"
             className={styles.configIcon}
+            width={24} // Ajusta el ancho según lo que necesites
+            height={24} // Ajusta la altura según lo que necesites
           />
         </a>
       </header>
@@ -157,10 +160,20 @@ export default function Dashboard() {
       {/* Footer */}
       <footer className={styles.footer}>
         <a href="/facturacion" className={styles.footerLink}>
-          <img src="/icons/invoice.png" alt="Factura" />
+          <Image
+            src="/icons/invoice.png"
+            alt="Factura"
+            width={24} // Ajusta el ancho según lo que necesites
+            height={24} // Ajusta la altura según lo que necesites
+          />
         </a>
         <a href="/invoice_detail" className={styles.footerLink}>
-          <img src="/icons/report.png" alt="Reporte" />
+          <Image
+            src="/icons/report.png"
+            alt="Reporte"
+            width={24} // Ajusta el ancho según lo que necesites
+            height={24} // Ajusta la altura según lo que necesites
+          />
         </a>
       </footer>
     </div>
