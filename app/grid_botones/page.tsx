@@ -1,4 +1,3 @@
-"use client";
 import styles from "../../styles/Grid.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -23,7 +22,6 @@ export default function Dashboard() {
   const [clients, setClients] = useState<Client[]>([]); // Clientes
   const [products, setProducts] = useState<Product[]>([]); // Productos
 
-  // Obtener favoritos desde localStorage al cargar el componente
   useEffect(() => {
     const savedFavorites: Client[] = JSON.parse(localStorage.getItem("favorites") || "[]");
     setFavorites(savedFavorites);
@@ -31,14 +29,12 @@ export default function Dashboard() {
     const savedProductFavorites: Product[] = JSON.parse(localStorage.getItem("favoriteProducts") || "[]");
     setProductFavorites(savedProductFavorites);
 
-    // Obtener clientes y productos desde el backend
     const fetchData = async () => {
       try {
         const [clientsResponse, productsResponse] = await Promise.all([
-          axios.get("http://localhost:3000/client/read"),  // Obtener todos los clientes
-          axios.get("http://localhost:3000/product/read"),  // Obtener todos los productos
+          axios.get("http://localhost:3000/client/read"), 
+          axios.get("http://localhost:3000/product/read"),
         ]);
-
         setClients(clientsResponse.data);
         setProducts(productsResponse.data);
       } catch (error) {
@@ -48,7 +44,6 @@ export default function Dashboard() {
 
     fetchData();
 
-    // Escuchar el evento 'favoritesUpdated' para actualizar los favoritos
     const handleFavoritesUpdated = () => {
       const savedProductFavorites: Product[] = JSON.parse(localStorage.getItem("favoriteProducts") || "[]");
       setProductFavorites(savedProductFavorites);
@@ -56,25 +51,21 @@ export default function Dashboard() {
 
     window.addEventListener("favoritesUpdated", handleFavoritesUpdated);
 
-    // Limpiar el evento cuando el componente se desmonte
     return () => {
       window.removeEventListener("favoritesUpdated", handleFavoritesUpdated);
     };
   }, []);
 
-  // Filtrar solo los productos favoritos para mostrarlos
   const favoriteProducts = products.filter((product) =>
     productFavorites.some((fav) => fav.id === product.id)
   );
 
-  // Filtrar solo los clientes favoritos para mostrarlos
   const favoriteClients = clients.filter((client) =>
     favorites.some((fav) => fav.id === client.id)
   );
 
   return (
     <div className={styles.container}>
-      {/* Encabezado */}
       <header className={styles.header}>
         <div className={styles.logoContainer}>
           <span className={styles.logo}>Facturador</span>
@@ -84,15 +75,14 @@ export default function Dashboard() {
             src="/icons/setting.png"
             alt="Configuración"
             className={styles.configIcon}
-            width={24} // Ajusta el ancho según lo que necesites
-            height={24} // Ajusta la altura según lo que necesites
+            width={24}
+            height={24}
           />
         </a>
       </header>
 
       <main className={styles.main}>
         <div className={styles.dashboardContainer}>
-          {/* Contenedor de Clientes */}
           <div className={styles.sectionContainer}>
             <div className={styles.favoritesBoxClients}>
               <h3 className={styles.sectionTitle}>Clientes Favoritos</h3>
@@ -120,7 +110,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Contenedor de Productos */}
           <div className={styles.sectionContainer}>
             <div className={styles.favoritesBoxProducts}>
               <h3 className={styles.sectionTitle}>Productos Favoritos</h3>
@@ -157,22 +146,21 @@ export default function Dashboard() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className={styles.footer}>
         <a href="/facturacion" className={styles.footerLink}>
           <Image
             src="/icons/invoice.png"
             alt="Factura"
-            width={24} // Ajusta el ancho según lo que necesites
-            height={24} // Ajusta la altura según lo que necesites
+            width={24}
+            height={24}
           />
         </a>
         <a href="/invoice_detail" className={styles.footerLink}>
           <Image
             src="/icons/report.png"
             alt="Reporte"
-            width={24} // Ajusta el ancho según lo que necesites
-            height={24} // Ajusta la altura según lo que necesites
+            width={24}
+            height={24}
           />
         </a>
       </footer>
