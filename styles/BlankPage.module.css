@@ -7,7 +7,7 @@
   background-color: #e0e0e0;
   height: 100vh;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; 
 }
 
 /* Encabezado */
@@ -90,12 +90,40 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Botones en columna */
+/* Contenedor de botones */
 .buttonsContainer {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 10px;
+  align-items: center;
+}
+
+/* Estilo para el botón de favoritos */
+.favoriteButton {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  padding: 8px; /* Ajuste de padding */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.favoriteButton:hover {
+  transform: scale(1.2); /* Aumento de tamaño al pasar el mouse */
+}
+
+.favoriteButton svg {
+  fill: rgb(255, 255, 255); /* Color por defecto del ícono */
+}
+
+/* Fondo rojo cuando el cliente está en favoritos */
+.favoriteButton[style*="background-color: red"] {
+  background-color: red;
+  border-color: red;
+}
+
+/* Color de corazón cuando el cliente está en favoritos */
+.favoriteButton[style*="background-color: red"] svg {
+  fill: white;
+  color: white;
 }
 
 /* Botón Actualizar */
@@ -123,19 +151,6 @@
 /* Hover en los botones */
 .updateButton:hover, .deleteButton:hover {
   opacity: 0.8;
-}
-
-/* Botón de favoritos */
-.favoriteButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  transition: transform 0.3s ease;
-}
-
-.favoriteButton:hover {
-  transform: scale(1.2);
 }
 
 /* Mensaje vacío */
