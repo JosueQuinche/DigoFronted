@@ -1,3 +1,4 @@
+"use client"
 import styles from "../../styles/Grid.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
